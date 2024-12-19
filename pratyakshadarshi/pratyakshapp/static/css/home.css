@@ -1,0 +1,56 @@
+
+
+
+.container2{
+    margin: 30px;
+    
+}
+.ruu{
+    padding: 10px;
+}
+.container:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px yellow;
+
+}
+
+.ram{
+            
+    padding: 0px;
+}
+
+.video-card{
+    border-radius: 10px;
+}
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px yellow;
+}
+
+.pickmiddle:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px yellow;
+  }
+  
+.image {
+    margin-right: 10px;
+}
+.news {
+    
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    text-align: justify;
+}
+.curserim{
+    height: 300px;
+    width:300 ;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    
+}
+

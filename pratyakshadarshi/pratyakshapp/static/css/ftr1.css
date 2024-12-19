@@ -1,0 +1,68 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Footer Styling */
+   footer {
+    background-color:white;
+    color:black;
+    padding: 20px 0;
+  }
+   
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .footer-container div {
+    max-width: 300px;
+  }
+  
+  .footer-container h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff5722;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .footer-container p,
+  .footer-container ul {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+  
+  .footer-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-container ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-container ul li a {
+    color: #ff5722;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-container ul li a:hover {
+    color:black;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    font-size: 0.8rem;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }

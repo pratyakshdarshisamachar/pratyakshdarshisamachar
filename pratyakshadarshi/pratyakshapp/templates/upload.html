@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Upload</title>
+    <link rel="stylesheet" href="/static/css/vido.css">
+</head>
+{%include "header.html"%}
+
+<body>
+    <hr>
+    
+    <main class="container">
+        <section class="upload-section">
+            <h2>अपना वीडियो अपलोड करें</h2>
+            <form action="{%url 'uploadform'%}" method="POST">
+                {% csrf_token %}
+                <label for="title">वीडियो का शीर्षक:</label>
+                <input type="text"  name="Title" placeholder="यहां शीर्षक लिखें" required>
+                
+                <label for="description">वीडियो विवरण:</label>
+                <textarea  name="Description" placeholder="यहां विवरण लिखें" rows="4" required></textarea>
+                
+                <label for="file">वीडियो फ़ाइल:</label>
+                <input type="file"  name="File" accept="video/*" required>
+                
+                <button type="submit">अपलोड करें</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+<hr>
+{%include "footer.html"%}
+</html>

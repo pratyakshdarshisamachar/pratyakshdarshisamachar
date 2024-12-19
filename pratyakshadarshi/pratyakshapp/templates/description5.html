@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Describe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px;
+        }
+
+        .container img {
+            flex: 1;
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .container p {
+            flex: 2;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container">
+            {% for x in describenewss5 %}
+            <img src="{{x.pic.url}}">
+           <p>{{x.textfornews}}</p>
+           
+           {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>

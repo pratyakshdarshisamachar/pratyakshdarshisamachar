@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive News Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+       
+        .news-list {
+            list-style: none;
+            margin: 20px auto;
+            padding: 0;
+            width: 90%;
+            max-width: 800px;
+        }
+        .news-item {
+            display: flex;
+            background-color: white;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            align-items: center;
+        }
+        .news-item img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .news-item a {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            flex: 1;
+            align-items: center;
+        }
+        .news-content {
+            padding: 10px;
+            flex: 1;
+        }
+        .news-content h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #333;
+        }
+        .news-content p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #555;
+        }
+        .news-details {
+            margin: 20px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .news-details img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+      
+
+    
+        
+    </style>
+</head>
+{% include 'header.html'%}
+<body>
+    <!-- Header -->
+    
+
+    <!-- News List -->
+    <ul class="news-list">
+        
+        <li class="news-item">
+            {%for x in chunavnewss%}
+            <a href="../describe">
+                <img src="{{x.pic.url}}" alt="News 1"  >
+                <div class="news-content">
+                    <h4>{{x.heading}}</h4>
+                    <p>{{x.explain}}</p>
+                </div>
+            </a>
+            {% endfor %}
+        </li>
+    
+    
+        <li class="news-item">
+            {%for x in describenewss2%}
+            <a href="../describe2">
+                <img src="{{x.pic.url}}" alt="News 1"  >
+                <div class="news-content">
+                    <h4>{{x.heading}}</h4>
+                    <p>{{x.explain}}</p>
+                </div>
+            </a>
+            {% endfor %}
+        </li>
+
+        <li class="news-item">
+            {%for x in describenewss3%}
+            <a href="../describe3">
+                <img src="{{x.pic.url}}" alt="News 1"  >
+                <div class="news-content">
+                    <h4>{{x.heading}}</h4>
+                    <p>{{x.explain}}</p>
+                </div>
+            </a>
+            {% endfor %}
+        </li>
+
+        <li class="news-item">
+            {%for x in describenewss4%}
+            <a href="../describe4">
+                <img src="{{x.pic.url}}" alt="News 1"  >
+                <div class="news-content">
+                    <h4>{{x.heading}}</h4>
+                    <p>{{x.explain}}</p>
+                </div>
+            </a>
+            {% endfor %}
+            
+        </li>
+        <li class="news-item">
+            {%for x in describenewss5 %}
+            <a href="../describe5">
+                <img src="{{x.pic.url}}" alt="News 1"  >
+                <div class="news-content">
+                    <h4>{{x.heading}}</h4>
+                    <p>{{x.explain}}</p>
+                </div>
+            </a>
+            {% endfor %}
+        </li>
+
+
+    </ul> 
+    
+         {% comment %} <li class="news-item">
+            <a href="../describe4">
+                <img src="/static/img/m2.jpg" alt="News 3">
+                <div class="news-content">
+                    <h4>News Headline 3</h4>
+                    <p>This is the detailed content for News Headline 3. Provide a full story here with text and media.</p>
+                </div>
+            </a>
+        </li> {% endcomment %}
+        
+    
+{% include 'footer.html'%}
+</body>
+</html>
